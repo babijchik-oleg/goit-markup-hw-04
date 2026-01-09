@@ -308,7 +308,41 @@ color: #434455;
 .container-team-text {
     padding: 32px 16px;
     width: 232px;
-height: 56px;
+    height: 104px;
+}
+
+.team-socials {
+   
+}
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+     width: 40px;
+    height: 40px;
+}
+.social-link {
+     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+   position: relative;
+ gap: 24px;
+}
+
+.social-icon {
+position: absolute;
+}
+
+.team-list-socials {
+ display: flex;
+   padding: 0;
+   margin: 0;
+   list-style: none;
 }
 /*------------------Portfolio-----------*/
 .portfolio {
