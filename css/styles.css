@@ -363,12 +363,13 @@ color: #434455;
  display: flex;
  justify-content: center;
    gap: 24px;
-   padding: 0;
+   padding
    margin: 0;
    list-style: none;
 }
 
 .social-item {
+
      width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -390,11 +391,12 @@ color: #434455;
 }
 
 .social-icon {
+    display: flex;
 position: absolute;
-   fill: #fff;
+   fill: #f4f4fd;
     width: 16px;
     height: 16px;
-z-index: 17;
+     z-index: 1;
 }
 
 
