@@ -164,6 +164,28 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    width: 1440px;
+    height: 600px;
+}
+
+.hero-background {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;  
+}
+
+.hero-background::before {
+    content: '';
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    inset: 0;
+    width: 1440px;
+    height: 600px;
+    z-index: 1;
 }
 
 .hero-title {
@@ -177,6 +199,7 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
+z-index: 2;
 }
 
 .hero-btn {
@@ -197,6 +220,7 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
 cursor: pointer;
+z-index: 2;
 }
 
 
@@ -237,6 +261,22 @@ cursor: pointer;
     height: 104px;
 }
 
+.features-icon-wrapper {
+    width: 264px;
+height: 112px;
+border: 1px solid #8e8f99;
+border-radius: 4px;
+background: #f4f4fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.features-icon {
+   
+
+}
 .features-subtitle {
     padding-bottom: 8px;
     font-weight: 500;
@@ -314,36 +354,34 @@ color: #434455;
 .team-socials {
    
 }
+.team-list-socials {
+ display: flex;
+   gap: 24px;
+}
+
 .social-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
+   position: relative;
      width: 40px;
     height: 40px;
 }
 .social-link {
-     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: #4D5AE5;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
     border-radius: 50%;
-   position: relative;
- gap: 24px;
+display: flex;
 }
 
 .social-icon {
+    display: flex;
 position: absolute;
+top: 50%;
+left: 50%;
+color: #fff;
+transform: translate(-50%, -50%);
 }
 
-.team-list-socials {
- display: flex;
-   padding: 0;
-   margin: 0;
-   list-style: none;
-}
+
 /*------------------Portfolio-----------*/
 .portfolio {
     padding: 120px 0;
