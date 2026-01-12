@@ -273,7 +273,6 @@ background: #f4f4fd;
 
 }
 .features-subtitle {
-    padding-bottom: 8px;
     font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -324,7 +323,7 @@ background: #fff;
 }
 
 .team-subtitle {
-    padding-top: 32px;
+    
    margin-bottom: 8px;
     font-weight: 500;
 font-size: 20px;
@@ -468,6 +467,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .portfolio-text {
